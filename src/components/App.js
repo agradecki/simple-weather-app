@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react';
 import './App.css';
 import Form from './Form';
 import Result from './Result';
@@ -10,16 +9,20 @@ class App extends Component {
         value: "asdsa"
     }
 
+handleInputChange = (e) => {
+    this.setState({
+        value: e.target.value
+    })
+}
+
 render() {
 return (
     <div className="App">
-        <Form value={this.state.value}/>
+        <Form value={this.state.value} change={this.handleInputChange}/>
         <Result />
     </div>
     );
     }
 }
-
-ReactDOM.render(<App />, document.getElementById('root'))
 
 export default App;
