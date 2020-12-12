@@ -38,6 +38,7 @@ class App extends Component {
       .then((response) => response.json())
       .then((data) => {
         const time = new Date().toLocaleString();
+
         this.setState((prevState) => ({
           err: false,
           date: time,
@@ -66,7 +67,7 @@ class App extends Component {
           change={this.handleInputChange}
           submit={this.handleCitySubmit}
         />
-        <Result error={this.state.err} />
+        <Result weather={this.state} />
       </div>
     );
   }
