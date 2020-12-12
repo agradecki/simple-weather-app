@@ -1,28 +1,27 @@
-import React, { Component } from 'react';
-import './App.css';
-import Form from './Form';
-import Result from './Result';
+import React, { Component } from "react";
+import "./App.css";
+import Form from "./Form";
+import Result from "./Result";
 
 class App extends Component {
+  state = {
+    value: "asdsa",
+  };
 
-    state = {
-        value: "asdsa"
-    }
-
-handleInputChange = (e) => {
+  handleInputChange = (e) => {
     this.setState({
-        value: e.target.value
-    })
-}
+      value: e.target.value,
+    });
+  };
 
-render() {
-return (
-    <div className="App">
-        <Form value={this.state.value} change={this.handleInputChange}/>
+  render() {
+    return (
+      <div className="App">
+        <Form value={this.state.value} change={this.handleInputChange} />
         <Result />
-    </div>
+      </div>
     );
-    }
+  }
 }
 
 export default App;

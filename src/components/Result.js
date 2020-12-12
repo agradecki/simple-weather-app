@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const Result = () => {
-    return ( 
-        <div>
-            App
-        </div>
-     );
-}
- 
+  return <div>App</div>;
+};
+
 export default Result;
