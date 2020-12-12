@@ -1,0 +1,14 @@
+.result {
+  background-color: teal;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.result em {
+  font-weight: bold;
+}
+
+.result h2 {
+  margin-bottom: 80px;
+}

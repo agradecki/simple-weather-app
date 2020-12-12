@@ -61,7 +61,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="app">
         <Form
           value={this.state.value}
           change={this.handleInputChange}
