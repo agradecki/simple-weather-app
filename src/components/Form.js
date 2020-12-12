@@ -3,7 +3,7 @@ import "./Form.css";
 
 const Form = (props) => {
   return (
-    <form onSubmit={props.submit}>
+    <form>
       <h1>POGODA DLA TWOJEGO MIASTA</h1>
       <input
         type="text"
@@ -11,7 +11,6 @@ const Form = (props) => {
         placeholder="Wpisz miasto"
         onChange={props.change}
       />
-      <button>Wyszukaj miasta</button>
     </form>
   );
 };

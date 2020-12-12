@@ -28,24 +28,3 @@ form input:focus {
   width: 300px;
   color: teal;
 }
-
-button {
-  margin-left: 35px;
-  appearance: none;
-  outline: 0;
-  background-color: white;
-  border: 0;
-  margin: 0 0 50px 0;
-  padding: 10px 15px;
-  color: teal;
-  border-radius: 5px;
-  width: 210px;
-  cursor: pointer;
-  font-size: 20px;
-  transition-duration: 0.3s;
-}
-
-button:hover {
-  background-color: rgba(255, 255, 255, 0.7);
-  width: 250px;
-}
